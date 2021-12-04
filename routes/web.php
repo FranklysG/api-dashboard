@@ -14,6 +14,5 @@
 */
 
 $router->group(['prefix' => '/api'], function () use ($router){
-    $router->get('/sales', 'SaleController@index');
-    $router->get('/dashboard', 'DashboardController@index');
+    $router->get('/users', 'SystemUserController@index');
 });
