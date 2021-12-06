@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemUserGroup extends Model
 {
 	protected $table = 'system_user_group';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

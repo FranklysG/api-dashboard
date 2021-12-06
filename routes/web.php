@@ -13,6 +13,12 @@
 |
 */
 
-$router->group(['prefix' => '/api'], function () use ($router){
-    $router->get('/users', 'SystemUserController@index');
+$router->group(['prefix' => 'api'], function () use ($router){
+    $router->group(['prefix' => 'user'], function () use ($router){
+        $router->post('', 'SystemUserController@store');
+        $router->get('', 'SystemUserController@show');
+        $router->get('{id}', 'SystemUserController@search');
+        $router->put('{id}', 'SystemUserController@update');
+        $router->delete('{id}', 'SystemUserController@destroy');
+    });
 });

@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\SystemUser;
 
-class SystemUserController extends Controller
+class SystemUserController extends BaseController
 {
   /**
-   * Metodo responsavel por retornar os dados da Sales
+   * Metodo responsavel por retornar os todds os usuarios
    *
    * @return void
    */
-  public function index()
+  public function __construct()
   {
-    return SystemUser::all();
+      $this->class = SystemUser::class;
   }
 }

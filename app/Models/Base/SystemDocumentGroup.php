@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemDocumentGroup extends Model
 {
 	protected $table = 'system_document_group';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

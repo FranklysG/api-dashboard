@@ -26,7 +26,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemDocument extends Model
 {
 	protected $table = 'system_document';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

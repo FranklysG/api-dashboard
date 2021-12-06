@@ -20,4 +20,21 @@ class SystemUser extends BaseSystemUser
 		'active',
 		'type'
 	];
+
+	/**
+	 * Metodo responsavel por passar um md5 no password do usuario
+	 *  @param string $password
+	 */
+	public function setPasswordAttribute($password){
+		$this->attributes['password'] = md5($password);
+	}
+
+	/**
+	 * Metodo responsavel por esconder o email do usuario
+	 * @param string $email
+	 * @return ************@****
+	 */
+	public function getEmailAttribute($email){
+		return preg_replace('/([a-z])/','*', $email);
+	}
 }

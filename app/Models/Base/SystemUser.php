@@ -60,7 +60,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemUser extends Model
 {
 	protected $table = 'system_user';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

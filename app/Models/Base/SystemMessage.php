@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemMessage extends Model
 {
 	protected $table = 'system_message';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

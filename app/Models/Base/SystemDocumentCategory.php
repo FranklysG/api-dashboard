@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemDocumentCategory extends Model
 {
 	protected $table = 'system_document_category';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

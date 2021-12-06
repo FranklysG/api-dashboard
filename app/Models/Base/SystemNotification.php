@@ -27,7 +27,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemNotification extends Model
 {
 	protected $table = 'system_notification';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

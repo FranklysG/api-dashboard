@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
 class SystemDocumentUser extends Model
 {
 	protected $table = 'system_document_user';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [

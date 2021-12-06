@@ -19,6 +19,6 @@ use Illuminate\Database\Eloquent\Model;
 class SystemPreference extends Model
 {
 	protected $table = 'system_preference';
-	public $incrementing = false;
+	public $incrementing = true;
 	public $timestamps = false;
 }
